@@ -621,8 +621,6 @@ Declaration(ObjectProperty(<http://vivoweb.org/ontology/scientific-research#prot
 Declaration(ObjectProperty(<http://www.ebi.ac.uk/efo/swo/SWO_0000740>))
 Declaration(ObjectProperty(<http://www.ebi.ac.uk/efo/swo/SWO_0000741>))
 Declaration(ObjectProperty(<http://www.obofoundry.org/ro/ro.owl#has_agent>))
-Declaration(ObjectProperty(owl:DeprecatedProperty))
-Declaration(ObjectProperty(owl:sameAs))
 Declaration(ObjectProperty(owl:topObjectProperty))
 Declaration(ObjectProperty(skos:broader))
 Declaration(ObjectProperty(skos:narrower))
@@ -901,7 +899,6 @@ Declaration(AnnotationProperty(vitro:stubObjectPropertyAnnot))
 Declaration(AnnotationProperty(rdfs:comment))
 Declaration(AnnotationProperty(rdfs:isDefinedBy))
 Declaration(AnnotationProperty(rdfs:label))
-Declaration(AnnotationProperty(owl:minCardinality))
 Declaration(AnnotationProperty(ns:term_status))
 Declaration(AnnotationProperty(skos:scopeNote))
 Declaration(AnnotationProperty(skos2:editorialNote))
@@ -1191,7 +1188,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:ERO_0000482 "PERSON: Melissa Haendel")
 AnnotationAssertion(rdfs:comment obo:ERO_0000482 "Placeholder needs to be redesign")
 AnnotationAssertion(rdfs:label obo:ERO_0000482 "uses software"@en)
 AnnotationAssertion(owl:deprecated obo:ERO_0000482 "true"^^xsd:boolean)
-SubObjectPropertyOf(obo:ERO_0000482 owl:DeprecatedProperty)
 ObjectPropertyDomain(obo:ERO_0000482 obo:ERO_0000005)
 ObjectPropertyRange(obo:ERO_0000482 obo:ERO_0000071)
 
@@ -2202,17 +2198,6 @@ ObjectPropertyDomain(<http://www.ebi.ac.uk/efo/swo/SWO_0000741> ObjectUnionOf(ob
 # Object Property: <http://www.obofoundry.org/ro/ro.owl#has_agent> (has agent)
 
 AnnotationAssertion(rdfs:label <http://www.obofoundry.org/ro/ro.owl#has_agent> "has agent"@en)
-
-# Object Property: owl:DeprecatedProperty (deprecated property)
-
-AnnotationAssertion(rdfs:label owl:DeprecatedProperty "deprecated property"@en)
-
-# Object Property: owl:sameAs (same as)
-
-AnnotationAssertion(rdfs:label owl:sameAs "same as"@en)
-SubObjectPropertyOf(owl:sameAs owl:topObjectProperty)
-ObjectPropertyDomain(owl:sameAs owl:Thing)
-ObjectPropertyRange(owl:sameAs owl:Thing)
 
 # Object Property: skos:broader (broader concept)
 
@@ -7397,8 +7382,6 @@ SubClassOf(<http://xmlns.com/foaf/0.1/Person> ObjectAllValuesFrom(core:geographi
 SubClassOf(<http://xmlns.com/foaf/0.1/Person> ObjectAllValuesFrom(core:hasResearchArea owl:Thing))
 SubClassOf(<http://xmlns.com/foaf/0.1/Person> DataAllValuesFrom(core:freetextKeyword xsd:string))
 
-
-AnnotationAssertion(owl:minCardinality _:genid2147484411 "1"^^xsd:nonNegativeInteger)
 
 
 
