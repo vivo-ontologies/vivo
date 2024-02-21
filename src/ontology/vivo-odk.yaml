@@ -1,0 +1,46 @@
+## ontology metadata ##
+
+id: vivo
+title: The VIVO Ontology
+description: "The VIVO Ontology is used to represent scholarship."
+contact: christian.hauschke [at] tib [.] eu
+creators:
+  - "VIVO ontology working group"
+license: https://creativecommons.org/publicdomain/mark/1.0/
+
+
+## general ODK Settings ##
+
+uribase: http://vivoweb.org/ontology/core
+repo: vivo
+git_main_branch: main
+github_org: StroemPhi
+git_user: StroemPhi       # necessary for generating releases
+ci:
+- github_actions
+documentation:
+  documentation_system: mkdocs
+export_formats:
+- owl
+- ttl
+- obo
+reasoner: ELK
+release_artefacts:
+- full
+- base
+robot_java_args: '-Xmx16G'  # max RAM to be used by Robot in ODK
+
+## VIVO specific Settings ##
+
+import_group:
+  products:
+  - id: bfo
+    module_type: mirror
+  - id: ro
+  - id: omo
+    module_type: mirror
+  - id: iao
+  - id: obi
+
+
+
