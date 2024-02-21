@@ -1,5 +1,5 @@
 
-![Build Status](https://github.com/StroemPhi/vivo/workflows/CI/badge.svg)
+![Build Status](https://github.com/vivo-ontologies/vivo-ontology-ODK/workflows/CI/badge.svg)
 # The VIVO Ontology
 
 Description: The VIVO Ontology is used to represent scholarship.
