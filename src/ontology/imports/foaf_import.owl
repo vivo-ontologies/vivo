@@ -1,0 +1,84 @@
+Prefix(:=<http://vivoweb.org/ontology/core/vivo/imports/foaf_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://vivoweb.org/ontology/core/vivo/imports/foaf_import.owl>
+<http://vivoweb.org/ontology/core/vivo/releases/2024-02-21/imports/foaf_import.owl>
+Annotation(owl:versionInfo "2024-02-21")
+
+Declaration(Class(<http://purl.org/dc/terms/Agent>))
+Declaration(Class(<http://schema.org/Person>))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#Person>))
+Declaration(Class(<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>))
+Declaration(Class(<http://www.w3.org/2004/02/skos/core#Concept>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Agent>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Group>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Organization>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Person>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/dc/terms/Agent> (<http://purl.org/dc/terms/Agent>)
+
+EquivalentClasses(<http://purl.org/dc/terms/Agent> <http://xmlns.com/foaf/0.1/Agent>)
+
+# Class: <http://schema.org/Person> (<http://schema.org/Person>)
+
+EquivalentClasses(<http://schema.org/Person> <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#Person> (<http://www.w3.org/2000/10/swap/pim/contact#Person>)
+
+EquivalentClasses(<http://www.w3.org/2000/10/swap/pim/contact#Person> <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> (Spatial Thing)
+
+AnnotationAssertion(rdfs:label <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> "Spatial Thing")
+
+# Class: <http://www.w3.org/2004/02/skos/core#Concept> (Concept)
+
+AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#Concept> "Concept")
+
+# Class: <http://xmlns.com/foaf/0.1/Agent> (Agent)
+
+AnnotationAssertion(rdfs:comment <http://xmlns.com/foaf/0.1/Agent> "An agent (eg. person, group, software or physical artifact).")
+AnnotationAssertion(rdfs:label <http://xmlns.com/foaf/0.1/Agent> "Agent")
+AnnotationAssertion(<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://xmlns.com/foaf/0.1/Agent> "stable")
+
+# Class: <http://xmlns.com/foaf/0.1/Group> (Group)
+
+AnnotationAssertion(rdfs:comment <http://xmlns.com/foaf/0.1/Group> "A class of Agents.")
+AnnotationAssertion(rdfs:label <http://xmlns.com/foaf/0.1/Group> "Group")
+AnnotationAssertion(<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://xmlns.com/foaf/0.1/Group> "stable")
+SubClassOf(<http://xmlns.com/foaf/0.1/Group> <http://xmlns.com/foaf/0.1/Agent>)
+
+# Class: <http://xmlns.com/foaf/0.1/Organization> (Organization)
+
+AnnotationAssertion(rdfs:comment <http://xmlns.com/foaf/0.1/Organization> "An organization.")
+AnnotationAssertion(rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/Organization> <http://xmlns.com/foaf/0.1/>)
+AnnotationAssertion(rdfs:label <http://xmlns.com/foaf/0.1/Organization> "Organization")
+AnnotationAssertion(<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://xmlns.com/foaf/0.1/Organization> "stable")
+SubClassOf(<http://xmlns.com/foaf/0.1/Organization> <http://xmlns.com/foaf/0.1/Agent>)
+DisjointClasses(<http://xmlns.com/foaf/0.1/Organization> <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: <http://xmlns.com/foaf/0.1/Person> (Person)
+
+AnnotationAssertion(rdfs:comment <http://xmlns.com/foaf/0.1/Person> "A person.")
+AnnotationAssertion(rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/Person> <http://xmlns.com/foaf/0.1/>)
+AnnotationAssertion(rdfs:label <http://xmlns.com/foaf/0.1/Person> "Person")
+AnnotationAssertion(<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://xmlns.com/foaf/0.1/Person> "stable")
+SubClassOf(<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>)
+SubClassOf(<http://xmlns.com/foaf/0.1/Person> <http://xmlns.com/foaf/0.1/Agent>)
+
+
+AnnotationAssertion(rdfs:label owl:Thing "Thing")
+)

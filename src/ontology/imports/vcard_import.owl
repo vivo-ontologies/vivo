@@ -1,0 +1,749 @@
+Prefix(:=<http://vivoweb.org/ontology/core/vivo/imports/vcard_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://vivoweb.org/ontology/core/vivo/imports/vcard_import.owl>
+<http://vivoweb.org/ontology/core/vivo/releases/2024-02-21/imports/vcard_import.owl>
+Annotation(owl:versionInfo "2024-02-21")
+
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Acquaintance>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Address>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Agent>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Cell>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Child>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Colleague>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Contact>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Coresident>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Coworker>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Crush>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Date>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Email>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Emergency>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Fax>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Female>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Friend>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Gender>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Group>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Home>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Individual>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Kin>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Kind>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Location>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Male>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Me>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Met>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Muse>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Name>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Neighbor>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#None>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Organization>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Other>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Pager>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Parent>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#RelatedType>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Sibling>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Spouse>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Sweetheart>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#TelephoneType>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Text>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#TextPhone>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Type>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Unknown>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#VCard>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Video>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Voice>))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Work>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#adr>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#email>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#geo>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasAddress>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasCalendarLink>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasCalendarRequest>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasCategory>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasEmail>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasGeo>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasInstantMessage>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasKey>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasLanguage>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasLogo>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasMember>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasName>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasNickname>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasNote>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasOrganizationName>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasPhoto>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasRelated>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasSound>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasTelephone>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasTitle>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#hasURL>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#key>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#logo>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#n>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#photo>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#sound>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#tel>))
+Declaration(ObjectProperty(<http://www.w3.org/2006/vcard/ns#url>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#additional-name>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#anniversary>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#category>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#country-name>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#family-name>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#fn>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#given-name>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#honorific-prefix>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#honorific-suffix>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#language>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#locality>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#note>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#postal-code>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#region>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#role>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#street-address>))
+Declaration(DataProperty(<http://www.w3.org/2006/vcard/ns#title>))
+Declaration(Datatype(xsd:gYear))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#adr> (address)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#adr> "This object property has been mapped"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#adr> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#adr> "address"@en)
+EquivalentObjectProperties(<http://www.w3.org/2006/vcard/ns#adr> <http://www.w3.org/2006/vcard/ns#hasAddress>)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#email> (email)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#email> "This object property has been mapped"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#email> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#email> "email"@en)
+EquivalentObjectProperties(<http://www.w3.org/2006/vcard/ns#email> <http://www.w3.org/2006/vcard/ns#hasEmail>)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#geo> (geo)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#geo> "This object property has been mapped"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#geo> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#geo> "geo"@en)
+EquivalentObjectProperties(<http://www.w3.org/2006/vcard/ns#geo> <http://www.w3.org/2006/vcard/ns#hasGeo>)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasAddress> (has address)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasAddress> "To specify the components of the delivery address for the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasAddress> "has address"@en)
+ObjectPropertyRange(<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2006/vcard/ns#Address>)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasCalendarLink> (has calendar link)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasCalendarLink> "To specify the calendar associated with the object. (Was called CALURI in RFC6350)"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasCalendarLink> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasCalendarLink> "has calendar link"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasCalendarRequest> (has calendar request)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasCalendarRequest> "To specify the calendar user address to which a scheduling request be sent for the object. (Was called CALADRURI in RFC6350)"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasCalendarRequest> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasCalendarRequest> "has calendar request"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasCategory> (has category)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasCategory> "Used to support property parameters for the category data property"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasCategory> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasCategory> "has category"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasEmail> (has email)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasEmail> "To specify the electronic mail address for communication with the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasEmail> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasEmail> "has email"@en)
+ObjectPropertyRange(<http://www.w3.org/2006/vcard/ns#hasEmail> <http://www.w3.org/2006/vcard/ns#Email>)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasGeo> (has geo)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasGeo> "To specify information related to the global positioning of the object. May also be used as a property parameter."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasGeo> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasGeo> "has geo"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasInstantMessage> (has messaging)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasInstantMessage> "To specify the instant messaging and presence protocol communications with the object. (Was called IMPP in RFC6350)"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasInstantMessage> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasInstantMessage> "has messaging"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasKey> (has key)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasKey> "To specify a public key or authentication certificate associated with the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasKey> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasKey> "has key"@en)
+EquivalentObjectProperties(<http://www.w3.org/2006/vcard/ns#hasKey> <http://www.w3.org/2006/vcard/ns#key>)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasLanguage> (has language)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasLanguage> "Used to support property parameters for the language data property"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasLanguage> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasLanguage> "has language"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasLogo> (has logo)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasLogo> "To specify a graphic image of a logo associated with the object "@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasLogo> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasLogo> "has logo"@en)
+EquivalentObjectProperties(<http://www.w3.org/2006/vcard/ns#hasLogo> <http://www.w3.org/2006/vcard/ns#logo>)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasMember> (has member)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasMember> "To include a member in the group this object represents. (This property can only be used by Group individuals)"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasMember> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasMember> "has member"@en)
+ObjectPropertyDomain(<http://www.w3.org/2006/vcard/ns#hasMember> <http://www.w3.org/2006/vcard/ns#Group>)
+ObjectPropertyRange(<http://www.w3.org/2006/vcard/ns#hasMember> <http://www.w3.org/2006/vcard/ns#Kind>)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasName> (has name)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasName> "To specify the components of the name of the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasName> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasName> "has name"@en)
+EquivalentObjectProperties(<http://www.w3.org/2006/vcard/ns#hasName> <http://www.w3.org/2006/vcard/ns#n>)
+ObjectPropertyRange(<http://www.w3.org/2006/vcard/ns#hasName> <http://www.w3.org/2006/vcard/ns#Name>)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasNickname> (has nickname)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasNickname> "Used to support property parameters for the nickname data property"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasNickname> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasNickname> "has nickname"@en)
+AnnotationAssertion(rdfs:seeAlso <http://www.w3.org/2006/vcard/ns#hasNickname> <http://www.w3.org/2006/vcard/ns#nickname>)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasNote> (has note)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasNote> "Used to support property parameters for the note data property"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasNote> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasNote> "has note"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasOrganizationName> (has organization name)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasOrganizationName> "Used to support property parameters for the organization name data property"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasOrganizationName> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasOrganizationName> "has organization name"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasPhoto> (has photo)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasPhoto> "To specify an image or photograph information that annotates some aspect of the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasPhoto> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasPhoto> "has photo"@en)
+EquivalentObjectProperties(<http://www.w3.org/2006/vcard/ns#hasPhoto> <http://www.w3.org/2006/vcard/ns#photo>)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasRelated> (has related)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasRelated> "To specify a relationship between another entity and the entity represented by this object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasRelated> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasRelated> "has related"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasSound> (has sound)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasSound> "To specify a digital sound content information that annotates some aspect of the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasSound> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasSound> "has sound"@en)
+EquivalentObjectProperties(<http://www.w3.org/2006/vcard/ns#hasSound> <http://www.w3.org/2006/vcard/ns#sound>)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasTelephone> (has telephone)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasTelephone> "To specify the telephone number for telephony communication with the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasTelephone> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasTelephone> "has telephone"@en)
+EquivalentObjectProperties(<http://www.w3.org/2006/vcard/ns#hasTelephone> <http://www.w3.org/2006/vcard/ns#tel>)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasTitle> (has title)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasTitle> "Used to support property parameters for the title data property"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasTitle> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasTitle> "has title"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#hasURL> (has url)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#hasURL> "To specify a uniform resource locator associated with the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#hasURL> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#hasURL> "has url"@en)
+EquivalentObjectProperties(<http://www.w3.org/2006/vcard/ns#hasURL> <http://www.w3.org/2006/vcard/ns#url>)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#key> (key)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#key> "This object property has been mapped"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#key> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#key> "key"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#logo> (logo)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#logo> "This object property has been mapped"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#logo> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#logo> "logo"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#n> (name)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#n> "This object property has been mapped"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#n> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#n> "name"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#photo> (photo)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#photo> "This object property has been mapped"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#photo> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#photo> "photo"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#sound> (sound)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#sound> "This object property has been mapped"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#sound> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#sound> "sound"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#tel> (telephone)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#tel> "This object property has been mapped"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#tel> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#tel> "telephone"@en)
+
+# Object Property: <http://www.w3.org/2006/vcard/ns#url> (url)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#url> "This object property has been mapped"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#url> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#url> "url"@en)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#additional-name> (additional name)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#additional-name> "The additional name associated with the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#additional-name> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#additional-name> "additional name"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#additional-name> xsd:string)
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#anniversary> (anniversary)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#anniversary> "The date of marriage, or equivalent, of the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#anniversary> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#anniversary> "anniversary"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#anniversary> DataUnionOf(xsd:dateTime xsd:gYear))
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#category> (category)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#category> "The category information about the object, also known as tags"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#category> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#category> "category"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#category> xsd:string)
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#country-name> (country name)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#country-name> "The country name associated with the address of the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#country-name> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#country-name> "country name"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#country-name> xsd:string)
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#family-name> (family name)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#family-name> "The family name associated with the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#family-name> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#family-name> "family name"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#family-name> xsd:string)
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#fn> (formatted name)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#fn> "The formatted text corresponding to the name of the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#fn> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#fn> "formatted name"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#fn> xsd:string)
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#given-name> (given name)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#given-name> "The given name associated with the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#given-name> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#given-name> "given name"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#given-name> xsd:string)
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#honorific-prefix> (honorific prefix)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#honorific-prefix> "The honorific prefix of the name associated with the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#honorific-prefix> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#honorific-prefix> "honorific prefix"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#honorific-prefix> xsd:string)
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#honorific-suffix> (honorific suffix)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#honorific-suffix> "The honorific suffix of the name associated with the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#honorific-suffix> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#honorific-suffix> "honorific suffix"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#honorific-suffix> xsd:string)
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#language> (language)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#language> "To specify the language that may be used for contacting the object. May also be used as a property parameter."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#language> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#language> "language"@en)
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#locality> (locality)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#locality> "The locality (e.g. city or town) associated with the address of the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#locality> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#locality> "locality"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#locality> xsd:string)
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#note> (note)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#note> "A note associated with the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#note> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#note> "note"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#note> xsd:string)
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#postal-code> (postal code)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#postal-code> "The postal code associated with the address of the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#postal-code> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#postal-code> "postal code"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#postal-code> xsd:string)
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#region> (region)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#region> "The region (e.g. state or province) associated with the address of the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#region> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#region> "region"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#region> xsd:string)
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#role> (role)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#role> "To specify the function or part played in a particular situation by the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#role> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#role> "role"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#role> xsd:string)
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#street-address> (street address)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#street-address> "The street address associated with the address of the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#street-address> "street address"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#street-address> xsd:string)
+
+# Data Property: <http://www.w3.org/2006/vcard/ns#title> (title)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#title> "To specify the position or job of the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#title> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#title> "title"@en)
+DataPropertyRange(<http://www.w3.org/2006/vcard/ns#title> xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.w3.org/2006/vcard/ns#Acquaintance> (Acquaintance)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Acquaintance> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Acquaintance> "Acquaintance"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Acquaintance> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Address> (Address)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#Address> "To specify the components of the delivery address for the  object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Address> "Address"@en)
+EquivalentClasses(<http://www.w3.org/2006/vcard/ns#Address> ObjectUnionOf(ObjectIntersectionOf(DataSomeValuesFrom(<http://www.w3.org/2006/vcard/ns#country-name> xsd:string) DataMaxCardinality(1 <http://www.w3.org/2006/vcard/ns#country-name>)) ObjectIntersectionOf(DataSomeValuesFrom(<http://www.w3.org/2006/vcard/ns#locality> xsd:string) DataMaxCardinality(1 <http://www.w3.org/2006/vcard/ns#locality>)) ObjectIntersectionOf(DataSomeValuesFrom(<http://www.w3.org/2006/vcard/ns#postal-code> xsd:string) DataMaxCardinality(1 <http://www.w3.org/2006/vcard/ns#postal-code>)) ObjectIntersectionOf(DataSomeValuesFrom(<http://www.w3.org/2006/vcard/ns#region> xsd:string) DataMaxCardinality(1 <http://www.w3.org/2006/vcard/ns#region>)) ObjectIntersectionOf(DataSomeValuesFrom(<http://www.w3.org/2006/vcard/ns#street-address> xsd:string) DataMaxCardinality(1 <http://www.w3.org/2006/vcard/ns#street-address>))))
+
+# Class: <http://www.w3.org/2006/vcard/ns#Agent> (Agent)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Agent> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Agent> "Agent"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Agent> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Cell> (Cell)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#Cell> "Also called mobile telephone"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Cell> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Cell> "Cell"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Cell> <http://www.w3.org/2006/vcard/ns#TelephoneType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Child> (Child)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Child> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Child> "Child"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Child> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Colleague> (Colleague)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Colleague> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Colleague> "Colleague"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Colleague> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Contact> (Contact)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Contact> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Contact> "Contact"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Contact> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Coresident> (Coresident)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Coresident> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Coresident> "Coresident"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Coresident> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Coworker> (Coworker)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Coworker> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Coworker> "Coworker"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Coworker> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Crush> (Crush)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Crush> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Crush> "Crush"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Crush> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Date> (Date)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Date> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Date> "Date"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Date> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Email> (Email)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#Email> "To specify the electronic mail address for communication with the object the vCard represents. Use the hasEmail object property."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Email> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Email> "Email"@en)
+AnnotationAssertion(owl:deprecated <http://www.w3.org/2006/vcard/ns#Email> "true"^^xsd:boolean)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Emergency> (Emergency)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Emergency> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Emergency> "Emergency"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Emergency> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Fax> (Fax)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Fax> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Fax> "Fax"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Fax> <http://www.w3.org/2006/vcard/ns#TelephoneType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Female> (Female)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Female> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Female> "Female"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Female> <http://www.w3.org/2006/vcard/ns#Gender>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Friend> (Friend)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Friend> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Friend> "Friend"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Friend> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Gender> (Gender)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#Gender> "Used for gender codes. The URI of the gender code must be used as the value for Gender."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Gender> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Gender> "Gender"@en)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Group> (Group)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#Group> "Object representing a group of persons or entities.  A group object will usually contain hasMember properties to specify the members of the group."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Group> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Group> "Group"@en)
+EquivalentClasses(<http://www.w3.org/2006/vcard/ns#Group> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://www.w3.org/2006/vcard/ns#hasMember> <http://www.w3.org/2006/vcard/ns#Kind>) ObjectMinCardinality(1 <http://www.w3.org/2006/vcard/ns#hasMember> <http://www.w3.org/2006/vcard/ns#Kind>)))
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Group> <http://www.w3.org/2006/vcard/ns#Kind>)
+DisjointClasses(<http://www.w3.org/2006/vcard/ns#Group> <http://www.w3.org/2006/vcard/ns#Individual>)
+DisjointClasses(<http://www.w3.org/2006/vcard/ns#Group> <http://www.w3.org/2006/vcard/ns#Location>)
+DisjointClasses(<http://www.w3.org/2006/vcard/ns#Group> <http://www.w3.org/2006/vcard/ns#Organization>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Home> (Home)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#Home> "This implies that the property is related to an individual's personal life"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Home> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Home> "Home"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Home> <http://www.w3.org/2006/vcard/ns#Type>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Individual> (Individual)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#Individual> "An object representing a single person or entity"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Individual> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Individual> "Individual"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Individual> <http://www.w3.org/2006/vcard/ns#Kind>)
+DisjointClasses(<http://www.w3.org/2006/vcard/ns#Individual> <http://www.w3.org/2006/vcard/ns#Location>)
+DisjointClasses(<http://www.w3.org/2006/vcard/ns#Individual> <http://www.w3.org/2006/vcard/ns#Organization>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Kin> (Kin)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Kin> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Kin> "Kin"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Kin> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Kind> (Kind)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#Kind> "The parent class for all objects"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Kind> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Kind> "Kind"@en)
+EquivalentClasses(<http://www.w3.org/2006/vcard/ns#Kind> <http://www.w3.org/2006/vcard/ns#VCard>)
+EquivalentClasses(<http://www.w3.org/2006/vcard/ns#Kind> DataMinCardinality(1 <http://www.w3.org/2006/vcard/ns#fn> xsd:string))
+
+# Class: <http://www.w3.org/2006/vcard/ns#Location> (Location)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#Location> "An object representing a named geographical place"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Location> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Location> "Location"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Location> <http://www.w3.org/2006/vcard/ns#Kind>)
+DisjointClasses(<http://www.w3.org/2006/vcard/ns#Location> <http://www.w3.org/2006/vcard/ns#Organization>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Male> (Male)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Male> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Male> "Male"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Male> <http://www.w3.org/2006/vcard/ns#Gender>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Me> (Me)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Me> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Me> "Me"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Me> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Met> (Met)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Met> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Met> "Met"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Met> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Muse> (Muse)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Muse> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Muse> "Muse"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Muse> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Name> (Name)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#Name> "To specify the components of the name of the object"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Name> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Name> "Name"@en)
+EquivalentClasses(<http://www.w3.org/2006/vcard/ns#Name> ObjectUnionOf(ObjectIntersectionOf(DataSomeValuesFrom(<http://www.w3.org/2006/vcard/ns#additional-name> xsd:string) DataMinCardinality(0 <http://www.w3.org/2006/vcard/ns#additional-name>)) ObjectIntersectionOf(DataSomeValuesFrom(<http://www.w3.org/2006/vcard/ns#family-name> xsd:string) DataMaxCardinality(1 <http://www.w3.org/2006/vcard/ns#family-name>)) ObjectIntersectionOf(DataSomeValuesFrom(<http://www.w3.org/2006/vcard/ns#given-name> xsd:string) DataMaxCardinality(1 <http://www.w3.org/2006/vcard/ns#given-name>)) ObjectIntersectionOf(DataSomeValuesFrom(<http://www.w3.org/2006/vcard/ns#honorific-prefix> xsd:string) DataMinCardinality(0 <http://www.w3.org/2006/vcard/ns#honorific-prefix>)) ObjectIntersectionOf(DataSomeValuesFrom(<http://www.w3.org/2006/vcard/ns#honorific-suffix> xsd:string) DataMinCardinality(0 <http://www.w3.org/2006/vcard/ns#honorific-suffix>))))
+
+# Class: <http://www.w3.org/2006/vcard/ns#Neighbor> (Neighbor)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Neighbor> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Neighbor> "Neighbor"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Neighbor> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#None> (None)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#None> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#None> "None"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#None> <http://www.w3.org/2006/vcard/ns#Gender>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Organization> (Organization)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#Organization> "An object representing an organization.  An organization is a single entity, and might represent a business or government, a department or division within a business or government, a club, an association, or the like.
+"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Organization> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Organization> "Organization"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Organization> <http://www.w3.org/2006/vcard/ns#Kind>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Other> (Other)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Other> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Other> "Other"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Other> <http://www.w3.org/2006/vcard/ns#Gender>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Pager> (Pager)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Pager> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Pager> "Pager"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Pager> <http://www.w3.org/2006/vcard/ns#TelephoneType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Parent> (Parent)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Parent> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Parent> "Parent"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Parent> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#RelatedType> (Relation Type)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#RelatedType> "Used for relation type codes. The URI of the relation type code must be used as the value for the Relation Type."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#RelatedType> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#RelatedType> "Relation Type"@en)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Sibling> (Sibling)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Sibling> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Sibling> "Sibling"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Sibling> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Spouse> (Spouse)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Spouse> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Spouse> "Spouse"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Spouse> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Sweetheart> (Sweetheart)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Sweetheart> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Sweetheart> "Sweetheart"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Sweetheart> <http://www.w3.org/2006/vcard/ns#RelatedType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#TelephoneType> (Phone)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#TelephoneType> "Used for telephone type codes. The URI of the telephone type code must be used as the value for the Telephone Type."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#TelephoneType> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#TelephoneType> "Phone"@en)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Text> (Text)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#Text> "Also called sms telephone"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Text> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Text> "Text"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Text> <http://www.w3.org/2006/vcard/ns#TelephoneType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#TextPhone> (Text phone)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#TextPhone> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#TextPhone> "Text phone"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#TextPhone> <http://www.w3.org/2006/vcard/ns#TelephoneType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Type> (Type)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#Type> "Used for type codes. The URI of the type code must be used as the value for Type."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Type> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Type> "Type"@en)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Unknown> (Unknown)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Unknown> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Unknown> "Unknown"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Unknown> <http://www.w3.org/2006/vcard/ns#Gender>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#VCard> (VCard)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#VCard> "The vCard class is  equivalent to the new Kind class, which is the parent for the four explicit types of vCards (Individual, Organization, Location, Group)"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#VCard> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#VCard> "VCard"@en)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Video> (Video)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Video> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Video> "Video"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Video> <http://www.w3.org/2006/vcard/ns#TelephoneType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Voice> (Voice)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Voice> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Voice> "Voice"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Voice> <http://www.w3.org/2006/vcard/ns#TelephoneType>)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Work> (Work)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#Work> "This implies that the property is related to an individual's work place"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Work> <http://www.w3.org/2006/vcard/ns>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Work> "Work"@en)
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Work> <http://www.w3.org/2006/vcard/ns#Type>)
+
+
+)

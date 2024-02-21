@@ -41,6 +41,10 @@ import_group:
     module_type: mirror
   - id: iao
   - id: obi
+  - id: foaf
+    mirror_from: http://xmlns.com/foaf/spec/index.rdf
+  - id: vcard
+    mirror_from: http://www.w3.org/2006/vcard/ns.rdf
 
 
 

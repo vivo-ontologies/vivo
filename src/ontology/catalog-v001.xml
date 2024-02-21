@@ -18,6 +18,12 @@
   <uri name="http://vivoweb.org/ontology/core/vivo/imports/obi_import.owl" uri="imports/obi_import.owl"/>
   <uri name="http://vivoweb.org/ontology/core/vivo/imports/obi_import.obo" uri="imports/obi_import.obo"/>
   
+  <uri name="http://vivoweb.org/ontology/core/vivo/imports/foaf_import.owl" uri="imports/foaf_import.owl"/>
+  <uri name="http://vivoweb.org/ontology/core/vivo/imports/foaf_import.obo" uri="imports/foaf_import.obo"/>
+  
+  <uri name="http://vivoweb.org/ontology/core/vivo/imports/vcard_import.owl" uri="imports/vcard_import.owl"/>
+  <uri name="http://vivoweb.org/ontology/core/vivo/imports/vcard_import.obo" uri="imports/vcard_import.obo"/>
+  
 
 
   
